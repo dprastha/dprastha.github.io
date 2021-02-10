@@ -5,6 +5,7 @@ body {
       );
    color: rgb(58, 58, 58);
    transition: 1s;
+   overflow-x: hidden;
 }
 
 .container {
@@ -17,8 +18,15 @@ body {
 
 .notif {
    position: absolute;
-   width: 100%;
    text-align: center;
+   font-style: normal;
+   cursor: context-menu;
+   margin: 1% 25%; 
+}
+
+.alert {
+   font-size: 18px;
+   background-color: rgba(255, 0, 0, 0.5);
 }
 
 
@@ -47,6 +55,7 @@ body {
 
 .desc {
    font-size: 25px;
+   cursor: context-menu;
 }
 
 .card{
