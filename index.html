@@ -16,7 +16,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- My CSS -->
    <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,8 +30,8 @@
       <ul>
          <li><a href="#mywork">My Work</a></li>
          <li><a href="#myskills">Skills</a></li>
-         <li><a href="">About Me</a></li>
-         <li><a href="">Contact</a></li>
+         <li><a href="#aboutme">About Me</a></li>
+         <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="menu-toggle">
@@ -56,7 +57,11 @@
 
       <div class="mywork" id="mywork">
          <div class="gallery">
-            <h2 class="header-mywork">The project that i'have done</h2>
+            <div class="row">
+               <div class="col">
+                  <h2 class="header-mywork">The project that I'have <span>done</span></h2>
+               </div>
+            </div>
             <div class="hero hero-1">
                <img src="img/my-work/shayna-vue-2.png" alt="">
             </div>
@@ -91,29 +96,29 @@
       <div class="myskills" id="myskills">
          <div class="row">
             <div class="col-lg-4 position-relative mb-5">
-               <h1 class="fw-bold position-absolute top-50 start-0 translate-middle-y title-skills">What <span>i
+               <h1 class="fw-bold position-absolute top-50 start-0 translate-middle-y title-skills">What <span>I
                      can</span> do?</h1>
             </div>
             <!-- * Front End -->
             <div class="col-lg-4 frontend mb-4">
                <h3>Front End</h3>
-               <div class="stack vue px-3 rounded-pill">
+               <div class="stack fe vue px-3 rounded-pill">
                   <p>Vue.js <img src="img/skills/vue.png" alt="Vue.js"></p>
                </div>
-               <div class="stack javascript px-3 rounded-pill ">
+               <div class="stack fe javascript px-3 rounded-pill ">
                   <p>Javascript <img src="img/skills/js.png" alt="Javascript"> </p>
 
                </div>
-               <div class="stack bootstrap px-3 rounded-pill">
+               <div class="stack fe bootstrap px-3 rounded-pill">
                   <p>Bootstrap <img src="img/skills/bootstrap.png" alt="Bootstrap"></p>
                </div>
-               <div class="stack sass px-3 rounded-pill">
+               <div class="stack fe sass px-3 rounded-pill">
                   <p>SASS <img src="img/skills/sass.png" alt="SASS"></p>
                </div>
-               <div class="stack css px-3 rounded-pill">
+               <div class="stack fe css px-3 rounded-pill">
                   <p>CSS <img src="img/skills/css.png" alt="CSS"></p>
                </div>
-               <div class="stack html px-3 rounded-pill">
+               <div class="stack fe html px-3 rounded-pill">
                   <p>HTML <img src="img/skills/html.png" alt="HTML"></p>
                </div>
             </div>
@@ -121,22 +126,22 @@
             <!-- * Backend -->
             <div class="col-lg-4 backend">
                <h3>Back End</h3>
-               <div class="stack express px-3 rounded-pill">
+               <div class="stack be express px-3 rounded-pill">
                   <p>Express.js <img src="img/skills/express.png" alt="Express.js"></p>
                </div>
-               <div class="stack node px-3 rounded-pill">
+               <div class="stack be node px-3 rounded-pill">
                   <p>Node.js <img src="img/skills/node.png" alt="Node.js"></p>
                </div>
-               <div class="stack laravel px-3 rounded-pill">
+               <div class="stack be laravel px-3 rounded-pill">
                   <p>Laravel <img src="img/skills//laravel.png" alt="Laravel"></p>
                </div>
-               <div class="stack mysql px-3 rounded-pill">
+               <div class="stack be mysql px-3 rounded-pill">
                   <p>MySQL <img src="img/skills/mysql.png" alt="MySQL"></p>
                </div>
-               <div class="stack mongodb px-3 rounded-pill">
+               <div class="stack be mongodb px-3 rounded-pill">
                   <p>MongoDB <img src="img/skills/mongo.png" alt="MongoDB"></p>
                </div>
-               <div class="stack php px-3 rounded-pill">
+               <div class="stack be php px-3 rounded-pill">
                   <p>PHP <img src="img/skills/php.png" alt="PHP"></p>
                </div>
             </div>
@@ -145,6 +150,87 @@
 
       <!-- * My Skills End -->
 
+      <!-- * About -->
+      <div class="row" id="aboutme">
+         <div class="col-lg pt-5">
+            <h2 class="about fw-bold">About <span>Me</span></h2>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-lg desc-about">
+            <p>
+               My name is Daniel Prastha Andika, I'm a Fullstack Web Developer, which can do both, <br>front end or back
+               end and currently studying Information System at Brawijaya University.
+            </p>
+
+            <p>
+               Dicipline person, problem solver and high intention to detail.
+            </p>
+         </div>
+      </div>
+      <!-- * About End -->
+
+      <!-- * Contact -->
+      <div class="row" id="contact">
+         <div class="col-lg pt-5">
+            <h2 class="contact fw-bold">Contact</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-7 social me-5">
+            <div class="mb-3">
+               <label for="name" class="form-label">Name</label>
+               <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+               <label for="email" class="form-label">Email</label>
+               <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+               <label for="text-area" class="form-label">Message</label>
+               <textarea class="form-control" id="text-area" rows="5"></textarea>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="sosmed mb-5">
+               <a href="https://www.instagram.com/danielprasthaa">
+                  <img src="img/social/instagram.png" alt="instagram" class="float-start me-3">
+                  <p class="">danielprasthaa</p>
+               </a>
+            </div>
+            <div class="sosmed mb-5">
+               <a href="https://github.com/dprastha" target="_blank">
+                  <img src="img/social/github.png" alt="github" class="float-start me-3">
+                  <p class="">dprastha</p>
+               </a>
+            </div>
+            <div class="sosmed mb-5">
+               <a href="https://www.linkedin.com/in/danielprastha" target="_blank">
+                  <img src="img/social/linkedin.png" alt="linked in" class="float-start me-3">
+                  <p class="">Daniel Prastha</p>
+               </a>
+            </div>
+            <div class="sosmed mb-5">
+               <a href="https://mail.google.com/" target="_blank">
+                  <img src="img/social/email.png" alt="email" class="float-start me-3">
+                  <p class="">danielprastha4@gmail.com</p>
+               </a>
+            </div>
+
+
+
+         </div>
+      </div>
+      <!-- * Contact End -->
+
+      <!-- * Footer -->
+      <div class="row mt-5 py-5">
+         <div class="col-lg">
+            <p class="text-center">Made with 💗 by Daniel Prastha</p>
+         </div>
+      </div>
+      <!-- * Footer End -->
 
    </div>
 

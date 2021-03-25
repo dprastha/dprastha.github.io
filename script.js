@@ -27,22 +27,37 @@ menuToggle.addEventListener('click', function () {
 // * My work
 window.addEventListener('scroll', function () {
    let scroll = window.pageYOffset;
-   console.log(scroll);
 
    const header = document.querySelector('.header-mywork');
-   console.log(header.offsetTop);
 
    if (scroll > header.offsetTop) {
       header.classList.add('muncul');
    }
+
+   // Skills
+   // const mySkills = document.querySelector('.myskills')
+   // const stack = document.querySelectorAll('.stack')
+   // if (scroll > mySkills.offsetTop - 50) {
+   //    stack.forEach(i => {
+   //       setTimeout(function () {
+   //          i.classList.add('muncul')
+   //       }, 300 * (i + 1))
+
+   //    })
+   // }
+
+   let wScroll = $(this).scrollTop();
+   if (wScroll > $('.myskills').offset().top - 250) {
+      $('.stack.fe').each(function (i) {
+         setTimeout(function () {
+            $('.stack.fe').eq(i).addClass('muncul')
+         }, 300 * (i + 1));
+      });
+
+      $('.stack.be').each(function (i) {
+         setTimeout(function () {
+            $('.stack.be').eq(i).addClass('muncul')
+         }, 300 * (i + 1));
+      });
+   }
 });
-
-// $(window).scroll(function () {
-//    let wScroll = $(this).scrollTop();
-//    console.log(wScroll)
-
-//    // header
-//    if (wScroll > $('.mywork').offset().top - 200) {
-//       $('.header-mywork').addClass('muncul');
-//    }
-// });

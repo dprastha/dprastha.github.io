@@ -6,7 +6,7 @@ body {
    font-size: 18px;
    transition: 0.3s;
    backdrop-filter: blur(150px);
-   height: 3000px;
+
 }
 
 /* * Navbar */
@@ -156,6 +156,10 @@ nav ul li a:hover {
    transition: .5s;
 }
 
+.header-mywork span {
+   color: #133E66;
+}
+
 .header-mywork.muncul {
    opacity: 1;
 }
@@ -255,6 +259,7 @@ nav ul li a:hover {
    border-radius: 5px;
    background-color: rgba(19, 63, 103, 0.3);
    transition: .3s;
+   color: white;
 }
 
 
@@ -284,6 +289,11 @@ nav ul li a:hover {
    padding-bottom: 1px;
    font-size: 18px;
    transition: .3s;
+   opacity: 0;
+}
+
+.stack.muncul {
+   opacity: 1;
 }
 
 .stack img {
@@ -296,8 +306,52 @@ nav ul li a:hover {
    transform: scale(1.05);
 }
 
+/* * About me */
+.about {
+   font-size: 80px;
+}
+
+.about span {
+   color: #8F77B1;
+}
+
+.desc-about p {
+   font-size: 25px;
+}
+
+/* * Contact */
+.contact {
+   font-size: 80px;
+}
+
+.form-control {
+   background-color: rgba(231, 231, 231, 0.3);
+}
+
+.form-control:focus {
+   background-color: rgba(231, 231, 231, 0.3);
+}
+
+/* * Social */
+.sosmed img {
+   width: 50px;
+}
+
+.sosmed a {
+   text-decoration: none;
+   color: white;
+}
+
+.sosmed p {
+   display: block;
+   font-size: 24px;
+}
 
 
+
+
+/* * Media Breakingpoint */
+/* * Media Breakingpoint */
 /* * Media Breakingpoint */
 
 @media (max-width: 1200px) {
@@ -362,6 +416,20 @@ nav ul li a:hover {
    .title-skills {
       font-size: 50px;
    }
+
+   /* * About */
+   .about {
+      font-size: 50px;
+   }
+
+   .desc-about {
+      font-size: 18px;
+   }
+
+   /* * Social */
+   .sosmed p {
+      font-size: 18px;
+   }
 }
 
 @media (max-width: 768px) {
@@ -399,6 +467,25 @@ nav ul li a:hover {
    /* * My Skills */
    .title-skills {
       font-size: 50px;
+   }
+
+   /* * About */
+   .about {
+      font-size: 50px;
+   }
+
+   .desc-about p {
+      font-size: 20px;
+   }
+
+   /* * Contact */
+   .contact {
+      font-size: 50px;
+   }
+
+   /* * Social */
+   .sosmed p {
+      font-size: 16px;
    }
 }
 
@@ -448,7 +535,7 @@ nav ul li a:hover {
    /* * Gallery */
 
    .header-mywork {
-      font-size: 18px;
+      font-size: 16px;
    }
 
    .mywork.gallery {
@@ -491,5 +578,24 @@ nav ul li a:hover {
    /* * My Skills */
    .title-skills {
       font-size: 36px;
+   }
+
+   /* * About */
+   .about {
+      font-size: 36px;
+   }
+
+   .desc-about p {
+      font-size: 18px;
+   }
+
+   /* * Contact */
+   .contact {
+      font-size: 36px;
+   }
+
+   /* * Social */
+   .sosmed p {
+      font-size: 16px;
    }
 }
