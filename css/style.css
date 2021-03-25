@@ -2,7 +2,7 @@ body {
    font-family: 'Poppins', sans-serif;
    background: radial-gradient(circle farthest-side at top left, #5AB4EA 10%, #F60D4F, #133E66);
    color: rgb(255, 255, 255);
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
    font-size: 18px;
    transition: 0.3s;
    backdrop-filter: blur(150px);
@@ -131,7 +131,7 @@ nav ul li a:hover {
 
 /* * My work */
 .mywork {
-   margin: 170px 0 0 0;
+   margin: 0 0 0 0;
 }
 
 .gallery {
@@ -148,6 +148,7 @@ nav ul li a:hover {
 }
 
 .header-mywork {
+   margin-top: 150px;
    grid-area: header;
    opacity: 0;
    width: 100%;
@@ -535,7 +536,7 @@ nav ul li a:hover {
    /* * Gallery */
 
    .header-mywork {
-      font-size: 16px;
+      font-size: 20px;
    }
 
    .mywork.gallery {
