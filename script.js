@@ -61,3 +61,29 @@ window.addEventListener('scroll', function () {
       });
    }
 });
+
+// * Google Sheet Form
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxQir2PxE6M5jm_DzPzjxbwLBr6lD6W9Khby_1QIW-jzBOeVQE7f8HXNlwYyPdxOsLzWw/exec'
+const form = document.forms['submit-to-google-sheet']
+const btnKirim = document.querySelector('.btn-kirim')
+const btnLoading = document.querySelector('.btn-loading')
+const alert = document.querySelector('.alert')
+
+form.addEventListener('submit', e => {
+   // Tampilkan tombol loading
+   btnKirim.classList.toggle('d-none')
+   btnLoading.classList.toggle('d-none')
+   e.preventDefault()
+   fetch(scriptURL, {
+         method: 'POST',
+         body: new FormData(form)
+      })
+      .then(response => {
+         btnKirim.classList.toggle('d-none')
+         btnLoading.classList.toggle('d-none')
+         alert.classList.toggle('d-none')
+         console.log('Success!', response)
+         form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+})
